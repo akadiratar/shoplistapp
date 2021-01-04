@@ -8,9 +8,7 @@ class FB {
 	constructor() { this.START(); }
 
 	START = async () => {
-		console.time('TOKEN TIME');
 		this.token = await STRG.getTOKEN(); //token yoksa oluşturur!
-		console.timeEnd('TOKEN TIME');
 	}
 
 	DB = null;
